@@ -20,20 +20,20 @@ public class CalculatorTest {
     public void testIsPositive() {
         int a = 2;
         assertTrue(calculator.isPositive(a));
-        /*int b = -5;
+        int b = -5;
         assertFalse(calculator.isPositive(b));
         int c = 0;
-        assertFalse(calculator.isPositive(c));*/
+        assertFalse(calculator.isPositive(c));
     }
 
     @Test
     public void testIsNegative() {
         int a = -2;
         assertTrue(calculator.isNegative(a));
-        /*int b = 7;
+        int b = 7;
         assertFalse(calculator.isNegative(b));
         int c = 0;
-        assertFalse(calculator.isNegative(c));*/
+        assertFalse(calculator.isNegative(c));
     }
 
     @Test
@@ -53,7 +53,7 @@ public class CalculatorTest {
         double a = 10.0;
         double b = 2.0;
         assertEquals(5.0, calculator.divide(a, b), 0.0001);
-        //assertThrows(ArithmeticException.class, () -> calculator.divide(a, 0.0));
+        assertThrows(ArithmeticException.class, () -> calculator.divide(a, 0.0));
     }
 
     @Test
